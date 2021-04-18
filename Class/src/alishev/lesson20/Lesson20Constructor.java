@@ -14,6 +14,9 @@ public class Lesson20Constructor {
         animal3.info();
         animal4.info();
         animal5.info();
+
+        System.out.println(animal5);
+
     }
 
 }
@@ -96,4 +99,10 @@ class Animal {
         System.out.printf("У меня живут эти животные: %s, %s, %d лет, %s.", name, type, age, say);
         System.out.println();
     }
+
+    public String toString(){
+        return name+", "+type+", "+age+", "+say;
+    }
+
+
 }
